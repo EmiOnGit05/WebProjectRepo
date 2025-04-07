@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Submit Questions</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="project.css">
+</head>
+<main>
+<div id="outerwrapper">
+<div id="wrapper">
+<header><h1>Emi's Meow Manual</h1></header>
+<nav>
+	<ul>
+		<li><a href="adoption.html">Adopt a Cat</a></li>
+		<li><a href="feed.html">Feed Your Cat</a></li>
+		<li><a href="needs.html">Care for Your Cat</a>
+			<ul>
+			<li><a href="behavior.html">Cat Behavior</a></li>
+			</ul>
+		<li><a href="resources.html">Resources</a></li>
+		<li><a href="askDev.html">Ask the Developer</a></li>
+	</ul>
+</nav>
+</div>
+<div id="wrapper">
+<img src="imageHolder.jpg"
+	height="300"
+	width="400"
+	align="center"
+	alt="A very detailed text that describes this very detailed image.">
+<header><h2>Ask Us!</h2></header>
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+   <div id="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="category">Category:</label>
+    <select id="category" name="category">
+        <option value="general">General Question</option>
+        <option value="adoption">Adoption Advice</option>
+        <option value="health">Cat Health</option>
+        <option value="behavior">Behavioral Issues</option>
+    </select>
+
+    <label for="question">Your Question:</label>
+    <textarea id="question" name="question" rows="5" required></textarea>
+
+    <button type="submit">Submit</button>
+</div>
+</form>
+</div>
+<div id="wrapper">
+<nav>
+	<a href="main.html">Back</a>
+</nav>
+<footer>
+	<p>Copyright &copy 2025<br>
+	Emi's Meow Manual<br>
+	<a href="ecollin7@my.westga.edu">ecollin7@my.westga.edu</a>
+	</p>
+</footer>
+</div>
+</div>
+</main>
