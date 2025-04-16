@@ -12,9 +12,7 @@ header { text-align:center; }
 
 h1 { line-height:200%;
      padding: 1em; 
-     background-image:url(logoHolder.jpg); 
-     background-repeat: no-repeat; 
-     background-size: contain; }
+     border: 2px solid #00005D;}
 
 nav { position: relative; 
 	margin-bottom:10px; }
@@ -97,6 +95,57 @@ form {
     margin: auto;
     padding: 20px;
     border-radius: 8px;
+}
+/* Styling for the details and summary elements */
+details {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #00005D;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+details[open] {
+    background-color: #fcebb6; /* Change background when expanded */
+}
+
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00005D;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+summary:hover {
+    color: #e76f51; /* Change color when hovered */
+}
+
+details p {
+    font-size: 16px;
+    color: #221811;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+summary::before {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+    transform: rotate(-180deg); /* Rotate the arrow when open */
+}
+
+details p {
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
 /*CLASSES FOR DIV */
