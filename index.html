@@ -1,70 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Image Gallery</title>
+<title>Emi's Meow Manual</title>
 <meta charset="utf-8">
-<style>
-body { background-color: #333333;
-       color: #EAEAEA;
-}
-#gallery { position: relative; }
-figure { position: absolute;
-         left: 280px;
-		 text-align: center;
-		 opacity: .25; }
-#gallery ul { width: 300px; 
-              list-style-type: none;
-}
-#gallery li { display: inline; 
-              float: left;
-			  padding: 10px;
-}
-#gallery img { border-style: none; }
-#gallery a { color: #EAEAEA;
-             text-decoration: none; 
-			 font-style: italic;
-}
-#gallery span { position: absolute; 
-                left: -1000px;
-				opacity: 0;
-                transition: opacity 3s ease-in-out; 
-}
-#gallery a:hover span { position: absolute;
-                        top: 16px; 
-						left: 320px;
-                        text-align: center; 
-						opacity: 1;
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This is your all-rounded meow manual on owning a cat, with resources, guides, and opportunities to ask questions!">
+<link rel="stylesheet"
+href="project.css">
 </head>
-<body>
-<h1>Image Gallery</h1>
-<div id="gallery">
- <figure>
-  <img src="photo1.jpg" width="400" height="300" alt="Golden Gate Bridge">
- </figure>
- <ul>
-   <li><a href="photo1.jpg"><img src="photo1thumb.jpg" width="100" height="75" alt="Golden Gate Bridge">
-   <span><img src="photo1.jpg" width="400" height="300"
-      alt="Golden Gate Bridge"><br>Golden Gate Bridge</span></a>
-   </li>
-     <li><a href="photo2.jpg"><img src="photo2thumb.jpg" width="100" height="75" alt="rocky coastline">
-    <span><img src="photo2.jpg" width="400" height="300" alt="Rocky coastline"><br>Rocky Coastline</span></a>
-  </li>
-  <li><a href="photo3.jpg"><img src="photo3thumb.jpg" width="100" height="75" alt="clouds moving in on the coast">
-    <span><img src="photo3.jpg" width="400" height="300" alt="clouds moving in on the coast"><br>Clouds Moving in on the Coast</span></a>
-  </li>
-  <li><a href="photo4.jpg"><img src="photo4thumb.jpg" width="100" height="75" alt="waterfall near Big Sur">
-    <span><img src="photo4.jpg" width="400" height="300" alt="waterfall near Big Sur"><br>Waterfall Near Big Sur</span></a>
-  </li>
-  <li><a href="photo5.jpg"><img src="photo5thumb.jpg" width="100" height="75" alt="waves crashing on the coast">
-    <span><img src="photo5.jpg" width="400" height="300" alt="waves crashing on the coast"><br>Waves Crashing in on the Coast</span></a>
-  </li>
-  <li><a href="photo6.jpg"><img src="photo6thumb.jpg" width="100" height="75" alt="sunset on the coast">
-    <span><img src="photo6.jpg" width="400" height="300" alt="sunset on the coast"><br>Sunset on the Coast</span></a>
-  </li>
- </ul>
+<main>
+<div id="outerwrapper">
+<div id="wrapper">
+<header><h1>Emi's Meow Manual</h1></header>
+<nav>
+	<ul>
+		<li><a href="adoption.html">Adopt a Cat</a></li>
+		<li><a href="feed.html">Feed Your Cat</a></li>
+		<li><a href="needs.html">Care for Your Cat</a>
+			<ul>
+			<li><a href="behavior.html">Cat Behavior</a></li>
+			</ul>
+		<li><a href="resources.html">Resources</a></li>
+		<li><a href="askDev.html">Ask the Developer</a></li>
+		<li><a href="products.html">Products</a></li>
+	</ul>
+</nav>
 </div>
-
-</body>
-</html>
+<div id="wrapper">
+<img src="mainCatImage.jpg"
+	height="300"
+	width="400"
+	align="center"
+	alt="An image of four orange kittens looking up curiously while leaning on a log. Purple flowers are in the corner of the image with a green, spring-like background.">
+<header><h2>Welcome to your personal meow manual!</h2></header>
+<p>New to owning a cat? Overwhelmed or not sure how to take the best care of your new furry friend? Don't worry, we've got you! This meownual will cover all the basics from food and diet needs, to keeping your cat properly entertained! Use the above links to search other offered pages for information, or go to the "Ask the Developer" page to submit a specific question!</p>
+</div>
+<div id="wrapper">
+<header><h3>Happy Searching!</h3></header>
+<img src="mainCatImageTwo.jpg"
+	height="300"
+	width="400"
+	align="center"
+	alt="A curious brown cat tilting it's head and looking at the camera. There is a blurred background of a living room with a table, bookshelf, and other furniture.">
+</div>
+<div id="wrapper">
+<footer>
+	<p>Copyright &copy 2025<br>
+	Emi's Meow Manual<br>
+	<a href="ecollin7@my.westga.edu">ecollin7@my.westga.edu</a>
+	</p>
+</footer>
+</div>
+</div>
+</main>
