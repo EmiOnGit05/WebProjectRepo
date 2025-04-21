@@ -177,7 +177,7 @@ details p {
     margin: 30px auto;
     padding: 20px;
     background: #FFFFFF;
-    border: 2px solid #00005D
+    border: 2px solid #00005D;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     flex-direction:column;
@@ -219,12 +219,174 @@ details p {
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-    transition: background 0.
+    transition: background 0;
 }
 
 #contact-form button:hover {
     background: #d35d43;
 }
+
+/*PRODUCT CSS*/
+/* Product Cards */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.product {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 1em;
+    color: #777;
+}
+
+.product .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 15px;
+}
+
+.product button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+/*SNIP-CART STYLING*/
+#snipcart {
+    font-family: Tahoma, Arial, sans-serif;
+}
+.snipcart-cart-container {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.snipcart-cart-total {
+    font-size: 1.5em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.snipcart-cart-item-title {
+    font-size: 1.1em;
+    color: #221811;
+}
+
+.snipcart-checkout-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2em;
+    margin: 0 auto;
+    border: none;
+    padding: 15px;
+    width: 25%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.snipcart-checkout-button:hover {
+    background-color: #218838;
+}
+
+.snipcart-cart-header {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.5em;
+    color: #00005D;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.snipcart-item-remove {
+    color: #d35d43;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.snipcart-item-remove:hover {
+    color: #e76f51;
+}
+
+.snipcart-close {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: #d35d43;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.snipcart-close:hover {
+    color: #e76f51;
+}
+
+/*BUTTON STYLING*/
+button {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    justify-content:center;
+}
+
+button:hover {
+    background-color: #d35d43;
+}
+
 
 /*MEDIA QUERIRES*/
 @media (max-width: 600px) {
