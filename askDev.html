@@ -33,7 +33,7 @@ href="project.css">
 	align="center"
 	alt="A very detailed text that describes this very detailed image.">
 <header><h2>Ask Us!</h2></header>
-<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+<form method="post" action="https://webdevbasics.net/scripts/demo.php" onsubmit="return validateForm();">
    <div id="contact-form">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
@@ -68,4 +68,23 @@ href="project.css">
 </footer>
 </div>
 </div>
+<script>
+function validateForm() {
+	let name = document.getElementById("name").value.trim();
+	let email = document.getElementById("email").value.trim();
+	let question = document.getElementById("question").value.trim();
+	let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	if (name === "" || email === "" || question === "") {
+		alert("Please fill in all required fields.");
+		return false;
+	}
+
+	if (!emailPattern.test(email)) {
+		alert("Please enter a valid email address.");
+		return false;
+	}
+	return true;
+}
+</script>
+	
 </main>

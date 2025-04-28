@@ -239,7 +239,7 @@ details p {
 .product {
     background-color: #ffffff;
     padding: 20px;
-    width: 250px;
+    width: 30%;
     text-align: center;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -426,3 +426,82 @@ button:hover {
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    .snipcart-cart-container {
+        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .snipcart-checkout-button {
+        width: 80%;
+        font-size: 1.1em;
+        padding: 12px;
+    }
+
+    .snipcart-cart-item-title {
+        font-size: 1em;
+    }
+
+    .snipcart-item-remove {
+        font-size: 1.1em;
+    }
+
+    .snipcart-cart-total {
+        font-size: 1.2em;
+    }
+
+    .snipcart-cart-header {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    .snipcart-close {
+        font-size: 1.2em;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product {
+        width: 90%;
+        max-width: 300px; /* Limit the width of the product cards */
+        padding: 15px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .product h3 {
+        font-size: 1.1em;
+        margin-top: 10px;
+    }
+
+    .product p {
+        font-size: 0.9em;
+        color: #777;
+    }
+
+    .product .price {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #28a745;
+        margin-top: 15px;
+    }
+
+    .product button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1em;
+    }
+}
+
