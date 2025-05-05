@@ -21,7 +21,8 @@ a { word-wrap: break-word;
 }
 
 
-header { text-align:center; }
+header { text-align:center; 
+	background-color:#FEFAEB;}
 
 h1 { line-height:200%;
      padding: 1em; 
