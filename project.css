@@ -6,7 +6,20 @@ body { background-image: url("CatFallBackground.jpg");
 	color:#221811;
 	font-family: Tahoma, Arial, sans-serif; }
 
+footer {
+	text-align: center;
+        width:auto;
+}
+
 p { text-align:center; }
+
+a { word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    display: inline-block;
+}
+
 
 header { text-align:center; }
 
@@ -193,7 +206,7 @@ details p {
     		margin: 50px auto;
     		padding: 20px;
     		border-radius: 10px; }
-#wrapper { width: 80%;
+.wrapper { width: 80%;
 	   background-color:#FEFAEB;
 	   margin-right: auto;
 	   margin-left: auto; }
@@ -466,7 +479,29 @@ button:hover {
 	padding: 10px 20px;
 	margin: 5px 0;
 	border: 1px solid;
+	box-sizing: border-box;
     }
+    nav ul ul {
+    	display: block !important;
+    	position: static;
+   	 width: 100%;
+    	text-align: center;
+    	margin-top: 0;
+    	padding-left: 0;
+  }
+
+  nav ul ul li {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #00005D;
+    margin: 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+
+  nav li:hover ul {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {

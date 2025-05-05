@@ -5,10 +5,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Giving your cat the proper nutrients is very important, so this web page is here to get you on the right track!">
+<meta name="keywords" content="cat care, cat adoption, cat food, cat behavior, Emi's Meow Manual">
 <link rel="stylesheet"
 href="project.css">
 </head>
-<main>
+<body>
 <div id="outerwrapper">
 <div id="wrapper">
 <header><h1>Nutrition of Your Cat</h1></header>
@@ -16,7 +17,7 @@ href="project.css">
 	<ul>
 		<li><a href="adoption.html">Adopt a Cat</a></li>
 		<li><a href="feed.html">Feed Your Cat</a></li>
-		<li><a href="needs.html">Care for Your Cat</a>
+		<li><a href="needs.html">Care for Your Cat</a></li>
 			<ul>
 			<li><a href="behavior.html">Cat Behavior</a></li>
 			</ul>
@@ -26,14 +27,74 @@ href="project.css">
 	</ul>
 </nav>
 </div>
+<main>
 <div id="wrapper">
 <img src="catFeedImage.jpg"
 	height="300"
 	width="400"
 	align="center"
-	alt="A very detailed text that describes this very detailed image.">
+	alt="An image of a black cat making an amusing face while reaching down to eat food.">
 <header><h2>Learning to give your cat proper nutrition</h2></header>
-<p>Paragraph with detailed information on feeding and water options for cat</p>
+<p>Proper nutrition and clean water is essential in keeping your cat happy and healthy! These are a few approved food brands and suggestions as a good place to start. Remember that kittens and cats sometimes eat seperate foods! If your kitten is a newborn, they can only digest kitten-specific milk fed in a bottle. A little older, try to stick to pate or labeled kitten food to help them get ready for big cat food!</p>
+</div>
+<div id="wrapper">
+<img src="openFarmFood.jpg" height="300" width="400" align="center" alt="An image of a bag of Open Farm Wild-Caught Salmon Dry Cat Food.">
+<header><h2>Open Farm Wild-Caught Salmon Dry Cat Food</h2></header>
+	<ul>
+		<li><strong>Description:</strong> Grain-free dry food made with sustainably sourced wild-caught salmon!</li>
+		<li><strong>Price:</strong> $63.99</li>
+		<li><strong>Where to buy:</strong> <a href="https://petswarehouse.com/products/open-farm-cat-wild-caught-salmon-8lb-l-x?variant=46988660703519&_gsid=hkdGVexRrEEn">https://petswarehouse.com</a></li>
+</div>
+<div id="wrapper">
+<img src="blueBuffaloFood.jpg" height="300" width="400" align="center" alt="An image of a bag of Blue Buffalo Tastefuls Indoor Chicken & Brown Rice.">
+<header><h2>Blue Buffalo Tastefuls Indoor Chicken & Brown Rice</h2></header>
+	<ul>
+		<li><strong>Description:</strong> Formulated for indoor cats, featuring real chicken and wholesome grains!</li>
+		<li><strong>Price:</strong> $20.98</li>
+		<li><strong>Where to buy:</strong> <a href="https://chuckanddons.com/products/blue-buffalo-indoor-health-natural-chicken-brown-rice-adult-dry-cat-food?variant=40309363736758&_gsid=bPxTz1nPXazB">https://chuckanddons.com</a></li>
+</div>
+<div id="wrapper">
+<img src="organicChickenFood.jpg" height="300" width="400" align="center" alt="An image of a bag of Tender & True Organic Chicken & Liver Recipe">
+<header><h2>Tender & True Organic Chicken & Liver Recipe</h2></header>
+	<ul>
+		<li><strong>Description:</strong> USDA-certified organic dry food with humanely raised chicken!</li>
+		<li><strong>Price:</strong> $15.99</li>
+		<li><strong>Where to buy:</strong> <a href="https://www.tenderandtruepet.com/products/organic-chicken-liver-recipe-dry-cat-food?variant=47917825917229&_gsid=wGdG1mo3F1xk">https://www.tenderandtruepet.com</a></li>
+</div>
+<div id="wrapper">
+<img src="purinaFood.jpg" height="300" width="400" align="center" alt="An image of a bag of Purina ONE Natural High Protein Grain Free">
+<header><h2>Purina ONE Natural High Protein Grain Free</h2></header>
+	<ul>
+		<li><strong>Description:</strong> High-protein formula with real chicken, free from grains!</li>
+		<li><strong>Price:</strong> $79.98</li>
+		<li><strong>Where to buy:</strong> <a href="https://www.walmart.com/ip/Purina-ONE-Natural-High-Protein-Grain-Free-Dry-Cat-Food-True-Instinct-With-Real-Ocean-Whitefish-14-4-lb-BagZK1/16378606466?classType=REGULAR&from=/search">https://www.walmart.com</a></li>
+</div>
+<div id="wrapper">
+<p>Cats really like flowing water, so getting a nice water fountain for them to drink is definetly worthwhile! This is one that I personally use for my five cats, that works really well!</p>
+<img src="catFountain.jpg" height="300" width="400" align="center" alt="An image of a cat fountain made of steel.">
+<header><h2>Pet Water Fountain</h2></header>
+	<ul>
+		<li><strong>Description:</strong> A good material water fountain for pets of all sizes! Has a wide bowl so multiple pets can drink at once, and a good filtration system to keep the water clean!</li>
+		<li><strong>Price:</strong> $33.99</li>
+		<li><strong>Where to buy:</strong> <a href="https://www.walmart.com/ip/Pet-Water-Fountain-4-5L-Wireless-Cat-Fountain-Stainless-Steel-Tray-3-Modes-Auto-Pet-Water-Dispenser-Cats-Dogs-Drinking-3-Filters-Quiet-Cat-Fountain/5639663800?classType=VARIANT&from=/search">https://www.walmart.com</a></li>
+</div>
+</main>
+<div class="cat-fact-container">
+  <button onclick="showFact()">Get Cat Fact 🐾</button>
+  <p id="factDisplay"></p>
+</div>
+<script>
+	const facts = [
+	"Cats sleep 70% of their lives.",
+	"A group of cats is called a clowder.",
+	"Some cats can jump 6 times their length!",
+	"Your cat probably dreams of world domination."
+	];
+function showFact() {
+	const randomIndex = Math.floor(Math.random() * facts.length);
+	document.getElementById("factDisplay").textContent = facts[randomIndex];
+}
+</script>
 </div>
 <div id="wrapper">
 <header><h3>Happy Searching!</h3></header>
@@ -50,9 +111,9 @@ href="project.css">
 <footer>
 	<p>Copyright &copy 2025<br>
 	Emi's Meow Manual<br>
-	<a href="ecollin7@my.westga.edu">ecollin7@my.westga.edu</a>
+	<a href="mailto:ecollin7@my.westga.edu">ecollin7@my.westga.edu</a>
 	</p>
 </footer>
 </div>
 </div>
-</main>
+</body>
